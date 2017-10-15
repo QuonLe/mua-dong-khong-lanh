@@ -12,14 +12,14 @@ class Girl(Document):
     description = StringField()
     rating = FloatField()
 
-# f = Faker()
+f = Faker()
 
-# for _ in range(20):
-#     g = Girl(name = f.name(),
-#     image ="https://source.unsplash.com/500x300/?lady",
-#     description = f.text(),
-#     rating = 4.1)
-#     g.save()
+for _ in range(20):
+    g = Girl(name = f.name(),
+    image ="https://source.unsplash.com/500x300/?sexy",
+    description = f.text(),
+    rating = 4.1)
+    g.save()
 
 @app.route('/')
 def index():
